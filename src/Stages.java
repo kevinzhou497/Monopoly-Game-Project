@@ -55,7 +55,6 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 		window.setSize(650, 500);
 		window.setLocation(50, 50);
 		window.setVisible(true); 
-
 	}
 	@Override
 	public void keyPressed(KeyEvent kp) {
@@ -65,13 +64,11 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 			window.dispose();
 			StartingWindow sw = new StartingWindow();
 		}
-
 	} 
 
 	@Override
 	public void keyReleased(KeyEvent arg0) {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
