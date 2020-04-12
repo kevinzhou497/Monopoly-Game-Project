@@ -18,9 +18,7 @@ import javax.swing.JPanel;
 public class Stages extends JPanel implements ActionListener, KeyListener
 {
 	public static void main(String[] args)
-	{
-
-	}
+	{}
 	JFrame window = new JFrame();
 	JComboBox Stages = new JComboBox();
 	String[] string = {"Rules, Game"};
@@ -29,7 +27,6 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 	JButton characters = new JButton();
 	JButton rules = new JButton();
 	JButton names = new JButton();
-
 	Font customFont = new Font("Bold", Font.BOLD, 28);
 	Font comboFont = new Font("Italic", Font.ITALIC, 25);
 
@@ -37,7 +34,6 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 	{
 		this.setBackground(Color.BLACK);
 		window.add(this);
-
 		rules.setFont(customFont);
 		rules.setText("Rules");
 		rules.addKeyListener(this);
@@ -45,22 +41,17 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 		rules.setForeground(Color.BLACK);
 		rules.setBackground(Color.LIGHT_GRAY);
 		window.add(rules, BorderLayout.WEST);
-
 		backButton.setFont(customFont);
 		backButton.setText("Back");
 		backButton.setForeground(Color.BLACK);
 		backButton.setBackground(Color.LIGHT_GRAY);
 		backButton.addKeyListener(this);
 		backButton.addActionListener(this);
-
 		window.add(backButton, BorderLayout.PAGE_END);
-
 		enterButton.setIcon(new ImageIcon("StartGame.jpg"));
 		enterButton.addKeyListener(this);
 		enterButton.addActionListener(this);
 		window.add(enterButton, BorderLayout.EAST);
-
-
 		window.setSize(650, 500);
 		window.setLocation(50, 50);
 		window.setVisible(true); 
@@ -86,9 +77,7 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 	@Override
 	public void keyTyped(KeyEvent arg0) {
 		// TODO Auto-generated method stub
-
 	}
-
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		if(ae.getSource() == backButton)
@@ -103,9 +92,7 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 			gui.initializeplayers();
 			gui.initializeMonopoly();
 			gui.setVisible(true);
-
 			gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 			gui.setSize(1600, 2400);
 			gui.setTitle("Monopoly");
 		}
@@ -117,10 +104,6 @@ public class Stages extends JPanel implements ActionListener, KeyListener
 		else if (ae.getSource() == names)
 		{
 			window.dispose();
-		
 		}
-
 	}
-
-
 }

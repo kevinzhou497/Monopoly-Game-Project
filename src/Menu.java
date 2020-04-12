@@ -65,12 +65,7 @@ public class Menu extends JFrame {
 	Menu() {
 		p1name="";
 		p2name="";
-		setLayout(new FlowLayout());
-		/*
-		 * image=new
-		 * ImageIcon(getClass().getResource("monopoly_photoshop_template.jpg"));
-		 * label=new JLabel(image); add(label);
-		 */     	 
+		setLayout(new FlowLayout()); 
 		button1 = new JButton("BUY PROPERTY");// yup
 		add(button1);
 		button3 = new JButton("END TURN");// yup
@@ -81,7 +76,6 @@ public class Menu extends JFrame {
 		add(button5);
 		button6 = new JButton("VIEW PERSONAL CARDS");
 		add(button6);
-
 		buy y = new buy();
 		button1.addActionListener(y);
 		Endturn e = new Endturn();
@@ -305,7 +299,6 @@ public class Menu extends JFrame {
 
 
 	public class cardCheck implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = "";
 			for (properties a : mover.getcards())
@@ -315,10 +308,8 @@ public class Menu extends JFrame {
 	}
 
 	public class housebuyer1 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem1.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -373,7 +364,6 @@ public class Menu extends JFrame {
 	public class housebuyer4 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem4.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -408,10 +398,8 @@ public class Menu extends JFrame {
 	}
 
 	public class housebuyer6 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem6.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -422,17 +410,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer7 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem7.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -443,17 +428,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer8 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem8.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -464,17 +446,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer9 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem9.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -485,17 +464,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer10 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem10.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -506,17 +482,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer11 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem11.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -527,17 +500,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer12 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem12.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -548,17 +518,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer13 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem13.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -569,17 +536,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer14 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem14.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -590,17 +554,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer15 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem15.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -611,17 +572,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer16 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem16.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -632,17 +590,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer17 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem17.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -653,17 +608,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer18 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem18.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -674,17 +626,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer19 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem19.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -695,17 +644,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer20 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem20.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -716,17 +662,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer21 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem21.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -737,17 +680,14 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class housebuyer22 implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			String result = menuitem22.getText();
-
 			for (properties a : monopoly) {
 				if (result.equals(a.getname())) {
 					if (a.getrent() != a.gethouserent())
@@ -758,15 +698,12 @@ public class Menu extends JFrame {
 						player1.setbalance(player1.getbalance() - a.gethouseprice());
 					else
 						player2.setbalance(player2.getbalance() - a.gethouseprice());
-
 				}
 			}
 		}
 	}
 
 	public class Roll implements ActionListener {
-
-
 		public void actionPerformed(ActionEvent e) {
 			label6.setText("");
 			label7.setText("");
@@ -774,15 +711,12 @@ public class Menu extends JFrame {
 			if (mover.getname().equals(player1.getname())) {
 				int newplace = player1.getplace() + diceroller();
 				if (newplace >= monopoly.size()) {
-
 					newplace = newplace - monopoly.size();
 					player1.setbalance(player1.getbalance() + 200);
-
 				}
 				player1.setplace(newplace);
 				if(monopoly.get(newplace).lookatbalancechanger()!=0)
 					player1.setbalance(player1.getbalance()+monopoly.get(newplace).lookatbalancechanger());
-
 				label6.setText(player1.getname() + " (balance: " + player1.getbalance() + ") lands on "
 						+ monopoly.get(player1.getplace()).getname());
 				if (monopoly.get(player1.getplace()).getownership() == 1
@@ -798,10 +732,8 @@ public class Menu extends JFrame {
 			} else if (mover.getname().equals(player2.getname())) {
 				int newplace = player2.getplace() + diceroller();
 				if (newplace >= monopoly.size()) {
-
 					newplace = newplace - monopoly.size();
 					player2.setbalance(player2.getbalance() + 200);
-
 				}
 				player2.setplace(newplace);
 				if(monopoly.get(newplace).lookatbalancechanger()!=0)
@@ -824,7 +756,6 @@ public class Menu extends JFrame {
 
 	public class Endturn implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-
 			if (mover.getname().equals(player1.getname())) {
 				mover.playerCopier(player2);
 				label6.setText(player2.getname() + ":");
@@ -833,11 +764,9 @@ public class Menu extends JFrame {
 				label6.setText(player1.getname() + ":");
 			}
 			if(player1.getbalance()<=0) {
-
 				label6.setText("");
 				label7.setText("");
 				label8.setText("");
-
 				label6.setText("PLAYER B WINS");
 			}
 			else if(player2.getbalance()<=0) {
@@ -846,7 +775,6 @@ public class Menu extends JFrame {
 				label8.setText("");
 				label6.setText("PLAYER A WINS");
 			}
-
 			label7.setText("");
 			label8.setText("");
 		}
@@ -854,35 +782,25 @@ public class Menu extends JFrame {
 
 	public class buy implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-
 			if (mover.getname().equals(player1.getname())) {
-
 				if (monopoly.get(player1.getplace()).getownership() == 0) {
 					monopoly.get(player1.getplace()).setownership(1);
 					player1.cardadder(monopoly.get(player1.getplace()));
 					player1.setbalance(player1.getbalance() - monopoly.get(player1.getplace()).getprice());
-
-
 				}
 
 			} else if (mover.getname().equals(player2.getname())) {
-
 				if (monopoly.get(player2.getplace()).getownership() == 0) {
 					monopoly.get(player2.getplace()).setownership(1);
 					player2.cardadder(monopoly.get(player2.getplace()));
 					player2.setbalance(player2.getbalance() - monopoly.get(player2.getplace()).getprice());
-
-
 				}
-
 			}
-
 		}
 	}
 
 	public void initializeplayers() {
 		player1 = new Player();
-
 		player2 = new Player();
 		player1.setname("A");
 		player2.setname("B");
@@ -896,27 +814,20 @@ public class Menu extends JFrame {
 		gui.initializeplayers();
 		gui.initializeMonopoly();
 		gui.setVisible(true);
-
 		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 		gui.setSize(1600, 2400);
 		gui.setTitle("Monopoly");
-
-
 	}
 
 	public static int diceroller() {
 		Random roll = new Random();
 		int roll1 = roll.nextInt(6) + 1;
 		int roll2 = roll.nextInt(6) + 1;
-
 		return roll1 + roll2;
 	}
 
-
 	public static void buyinghouse(ArrayList<properties> monopoly, Player player) {
 		if (player.monopolychecker("Brown") == true) {
-
 		}
 		if (player.monopolychecker("Brown") == true) {
 			System.out.println("You Have a brown monopoly. Do you want to buy a house?");
@@ -1007,7 +918,6 @@ public class Menu extends JFrame {
 				}
 			}
 		}
-
 	}
 
 	public void paint(Graphics g) {
