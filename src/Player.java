@@ -7,7 +7,6 @@ public class Player {
 
 	private ArrayList<properties> personalcards;
 	Player(){
-
 		balance=1500;
 		personalcards= new ArrayList<properties>();
 		place=0;
