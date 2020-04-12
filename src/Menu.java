@@ -9,7 +9,6 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Menu extends JFrame {
-
 	private ImageIcon image;
 	private JLabel label;
 	private Player mover;
@@ -169,7 +168,6 @@ public class Menu extends JFrame {
 		menuitem10.addActionListener(f10);
 		menuitem11.addActionListener(f11);
 		menuitem12.addActionListener(f12);
-
 		menuitem13.addActionListener(f13);
 		menuitem14.addActionListener(f14);
 		menuitem15.addActionListener(f15);
@@ -191,7 +189,6 @@ public class Menu extends JFrame {
 		add(label7);
 		label8 = new JLabel("");
 		add(label8);
-
 	}
 	public class name implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
@@ -276,7 +273,6 @@ public class Menu extends JFrame {
 	}
 
 	public class stats implements ActionListener {
-
 		public void actionPerformed(ActionEvent e) {
 			if (mover.getname().equals(player1.getname()))
 				label7.setText("Name: " + monopoly.get(player1.getplace()).getname() + " Cost:"
@@ -292,11 +288,8 @@ public class Menu extends JFrame {
 						+ monopoly.get(player2.getplace()).gethouseprice() + " Rent With House:"
 						+ monopoly.get(player2.getplace()).gethouserent() + " Hotel Rent:"
 						+ monopoly.get(player2.getplace()).gethotelrent());
-
 		}
-
 	}
-
 
 	public class cardCheck implements ActionListener {
 		public void actionPerformed(ActionEvent e) {

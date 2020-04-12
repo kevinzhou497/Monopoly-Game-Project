@@ -4,7 +4,6 @@ public class Player {
 	private int balance;
 	private int place;
 	private String name;
-
 	private ArrayList<properties> personalcards;
 	Player(){
 		balance=1500;
@@ -49,7 +48,6 @@ public class Player {
 		for(properties a: personalcards) {
 			if(a.getname().compareTo(thiscard.getname())==0)
 				return true;
-
 		}
 		return false;
 	}
